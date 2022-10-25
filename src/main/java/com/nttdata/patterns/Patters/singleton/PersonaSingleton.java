@@ -1,11 +1,11 @@
 package com.nttdata.patterns.Patters.singleton;
 
 public class PersonaSingleton {
-	private Persona persona;
+	private static Persona persona;
 	
 	private PersonaSingleton() {}
 	
-	public Persona getInstance() {
+	public static Persona getInstance() {
 		if (persona == null) {
             persona = new Persona();
         }
